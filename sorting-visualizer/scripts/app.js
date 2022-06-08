@@ -41,11 +41,6 @@ const RandomList = async () => {
     node.className = "cell";
     node.setAttribute("value", String(element));
     node.style.height = `${3.8 * element}px`;
-    const p = document.createElement("p");
-    const text = document.createTextNode(String(element));
-    p.appendChild(text);
-    p.setAttribute("class", "cellP");
-    node.appendChild(p);
     arrayNode.appendChild(node);
   }
 };
